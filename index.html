@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Mapa</title>
+    <LINK href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	Hola Mundo
+	<header> 
+	<div id="logo"></div>
+	<div id="busqueda"></div>
+	<div id="sesion">
+		<form action="session.php" method="post">
+			<div id="inputse">
+				<br> <input type="text" name="user"/>
+				<br> <input type="password" name="password"/>
+			</div>
+			
+			<div id="radio">
+				<br> <input type="radio" 	name="type" 	value="panel" checked	>	panel
+	  			<br> <input type="radio" 	name="type" 	value="bus"  			>	bus
+			</div>
+			
+		
+			<br> <input type="submit" value="Enviar"/>
+		</form>
+	</div>		
+	</header>
+
+		<iframe src="mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
+
+
+<footer></footer>
+
+	
+
 </body>
 </html>

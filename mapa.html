@@ -5,34 +5,12 @@
 	<title>Document</title>
 </head>
 <body>
-<div id="map" style="width: 685px; height: 450px; border: 1px solid #777; overflow: hidden; margin: 0 auto;"></div>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<div id="map" style="width: 685px; height: 450px; border: 1px solid #777; overflow: hidden; margin: 0 auto;"></div> 
+ 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.gmap.js"></script>
-	
-	<script type="text/javascript">
-		$(document).ready(function() {
-		   
-			$('#map').gMap({ markers: [{
-											latitude: 7.1364639, 
-											longitude: -73.1172689,
-											html: 'UIS'
-										}, 
-										{
-											latitude: 7.1057879, 
-											longitude: -73.1141492,
-											html: 'Puerta del sol'
-										},
-										{
-											latitude: 7.1250519, 
-											longitude: -73.1180279,
-											html: 'Parque de los niños'
-										}], 
-							zoom: 13,
-							icon : { image: 'favicon.png' },
-							maptype: google.maps.MapTypeId.roadmap
-						});
-		});
-	</script>
+	<script type="text/javascript" src="js/gmaps.js"></script>
+	<script type="text/javascript" src="test.js" ></script>		
+
 </body>
 </html>

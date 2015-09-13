@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mapa</title>
+    <LINK href="index.css" rel="stylesheet" type="text/css">
+    <LINK href="interfaz.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header> 
+	<div id="logo"></div>
+	<div id="busqueda"></div>
+	<div id="sesion">
+		<form action="session.php" method="post">
+			<div id="inputse">
+				<br> <input type="text" name="user"/>
+				<br> <input type="password" name="password"/>
+			</div>
+			
+			<div id="radio">
+				<br> <input type="radio" 	name="type" 	value="panel" checked	>	panel
+	  			<br> <input type="radio" 	name="type" 	value="bus"  			>	bus
+			</div>
+			
+		
+			<br> <input type="submit" value="Enviar"/>
+		</form>
+	</div>		
+	</header>
+
+		<iframe src="mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
+
+		<div class="caja">
+			<div class="caja">	
+				<input type="checkbox" value="Estaciones" 		checked> Estaciones	<br>
+				<input type="checkbox" value="buses" 			checked> buses		<br>
+				<input type="checkbox" value="rutas"			checked> rutas		<br>
+			</div>
+
+			<div class="caja">
+				<select name="Estaciones" size="10" multiple>
+				  <option> Est01
+				  <option> Est02
+				  <option> Est03
+				  <option> Est04
+				  <option> Est05
+				  <option> Est06
+				</select> 
+			</div>
+
+			<div class="caja">
+				<select name="buses" size="10" multiple>
+				  <option> Bus01
+				  <option> Bus02
+				  <option> Bus03
+				  <option> Bus04
+				  <option> Bus05
+				  <option> Bus06
+				</select> 
+			</div>
+
+			<div class="caja">
+				<select name="rutas" size="10" multiple>
+				  <option> Ruta01
+				  <option> Ruta02
+				  <option> Ruta03
+				  <option> Ruta04
+				  <option> Ruta05
+				  <option> Ruta06
+				</select> 
+			</div>
+		</div>
+
+		<div class="caja">
+			
+
+			
+		</div>
+
+
+
+<footer></footer>
+
+	
+
+</body>
+</html>

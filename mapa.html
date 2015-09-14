@@ -15,28 +15,279 @@
 		   
 			 map= new GMaps({
 			  div: '#map',
-			  lat: 7.1364639,
-			  lng: -73.1172689			  
+			  lat: 7.1024639,
+			  lng: -73.1172689,
+			  zoom: 13
 			});
 
+            
+            //ruta 1
 			map.addMarker({
-			  lat: 7.1364639,
-			  lng: -73.1172689,
+			  lat: 7.1376718,
+			  lng: -73.118959,
 			  title: 'UIS',
 			  click: function(e) {
 			    alert('You clicked in this marker');
 			  }
 			});
 
+			map.addMarker({
+			  lat: 7.0876912,
+			  lng: -73.1364687,
+			  title: 'terminal',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+              map.addMarker({
+			  lat: 7.1247492,
+			  lng: -73.117962,
+			  title: 'niños',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+			
+              map.addMarker({
+			  lat: 7.0998583,
+			  lng: -73.1131649,
+			  title: 'laSalle',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
 
 			map.drawRoute({
-			  origin: [7.1364639, -73.1172689],
-			  destination: [7.1057879, -73.1141492],
+			  origin: [7.1376718,-73.118959],
+			  destination: [7.0888604,-73.133087],
 			  travelMode: 'driving',
 			  strokeColor: '#131540',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			});
+
+
+			map.drawRoute({
+			  origin: [7.0888604,-73.133087],
+			  destination: [7.1376718,-73.118959],
+			  travelMode: 'driving',
+			  strokeColor: '#131540',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			});
+
+
+			//ruta 2
+			map.addMarker({
+			  lat: 7.0660561,
+			  lng: -73.0980913,
+			  title: 'lagos',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+			map.addMarker({
+			  lat: 7.122558,
+			  lng: -73.1281364,
+			  title: 'quebradaSeca',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+              map.addMarker({
+			  lat:7.0954413,
+			  lng: -73.1106727,
+			  title: 'diamante',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+	          map.addMarker({
+			  lat:7.1081123,
+			  lng: -73.1162209,
+			  title: 'isla',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+			map.drawRoute({
+			  origin: [7.0660561, -73.0980913],
+			  destination: [ 7.122558, -73.1281364],
+			  travelMode: 'driving',
+			  strokeColor: '#2AEA37',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			});
+
+			map.drawRoute({
+			  origin:[7.122558, -73.1281364] ,
+			  destination: [7.0660561, -73.0980913],
+			  travelMode: 'driving',
+			  strokeColor: '#2AEA37',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			}); 
+
+
+			//ruta 3
+			map.addMarker({
+			  lat: 7.1170495,
+			  lng: -73.1297719,
+			  title: 'alcaldia',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+			map.addMarker({
+			  lat: 7.1190036,
+			  lng: -73.11053498,
+			  title: 'sanpio',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+              map.addMarker({
+			  lat:7.1039052,
+			  lng: -73.110801,
+			  title: 'conucos',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+	          map.addMarker({
+			  lat: 7.1174544,
+			  lng: -73.1053597,
+			  title: 'unab',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+			map.drawRoute({
+			  origin: [7.1170495,-73.1297719],
+			  destination: [7.1174544,-73.1053597],
+			  travelMode: 'driving',
+			  strokeColor: '#A168A5',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			});
+
+			map.drawRoute({
+			  origin:[7.1174544,-73.1053597] ,
+			  destination: [7.1170495,-73.1297719],
+			  travelMode: 'driving',
+			  strokeColor: '#A168A5',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			}); 
+
+
+
+
+            //ruta 4
+			map.addMarker({
+			  lat: 7.0994319,
+			  lng: -73.1066597,
+			  title: 'cacique',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+			map.addMarker({
+			  lat: 7.1190036,
+			  lng: -73.11053498,
+			  title: 'sanpio',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+              map.addMarker({
+			  lat:7.1039052,
+			  lng: -73.110801,
+			  title: 'conucos',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+	          map.addMarker({
+			  lat: 7.1311197,
+			  lng: -73.1099239,
+			  title: 'parqueAgua',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+			map.drawRoute({
+			  origin: [7.0994319,-73.1066597],
+			  destination: [7.1311197,-73.1099239],
+			  travelMode: 'driving',
+			  strokeColor: '#F36363',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			});
+
+			map.drawRoute({
+			  origin:[7.1311197,-73.1099239] ,
+			  destination: [7.0994319,-73.1066597],
+			  travelMode: 'driving',
+			  strokeColor: '#F36363',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			}); 
+
+
+
+
+            //ruta 5
+			map.addMarker({
+			  lat: 7.1317356,
+			  lng: -73.1249277,
+			  title: 'sanFrancisco',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+	          map.addMarker({
+			  lat: 7.0660561,
+			  lng: -73.0980913,
+			  title: 'lagos',
+			  click: function(e) {
+			    alert('You clicked in this marker');
+			  }
+			});
+
+			map.drawRoute({
+			  origin: [7.1317356,-73.1249277],
+			  destination: [7.0660561,-73.0980913],
+			  travelMode: 'driving',
+			  strokeColor: '#8D6A6A',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			});
+
+			map.drawRoute({
+			  origin:[7.0660561,-73.0980913] ,
+			  destination: [7.1317356,-73.1249277],
+			  travelMode: 'driving',
+			  strokeColor: '#8D6A6A',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			}); 
+
+			
 
 		});
 	</script>

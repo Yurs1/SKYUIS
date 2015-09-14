@@ -3,6 +3,7 @@
 <head>
 	<title>Mapa</title>
     <LINK href="index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="functions.js" >    </script>
 </head>
 <body>
 	<header> 
@@ -27,18 +28,18 @@
 	</header>
 
 		<div class="caja">
-			<iframe src="mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
+			<iframe id="frame" src="mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
 		</div>
 		<div class="caja">
-			<select name="ruta" size="10" multiple>
-				  <option> Ruta01
+			<select id="ruta" size="5" multiple>
+				  <option> Ruta01 	
 				  <option> Ruta02
 				  <option> Ruta03
 				  <option> Ruta04
 				  <option> Ruta05
-				  <option> Ruta06
 				</select> 
 
+    <input type="button" id="boton3" value="ver ruta"/>
 
 		</div>
 

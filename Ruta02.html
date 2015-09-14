@@ -12,66 +12,69 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-		   
-			 map= new GMaps({
+		      var img='favicon.png';
+			  map= new GMaps({
 			  div: '#map',
 			  lat: 7.1024639,
 			  lng: -73.1172689,
 			  zoom: 13
 			});
 
-	
-			//ruta 3
+		    //ruta 2
 			map.addMarker({
-			  lat: 7.1170495,
-			  lng: -73.1297719,
-			  title: 'alcaldia',
+			  lat: 7.0660561,
+			  lng: -73.0980913,
+			  title: 'lagos',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación alcaldia');
+			    alert('Estación Lagos');
 			  }
 			});
 
 			map.addMarker({
-			  lat: 7.1190036,
-			  lng: -73.11053498,
-			  title: 'sanpio',
+			  lat: 7.122558,
+			  lng: -73.1281364,
+			  title: 'quebradaSeca',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación parque San Pio');
+			    alert('Estación quebradaSeca');
 			  }
 			});
 
               map.addMarker({
-			  lat:7.1039052,
-			  lng: -73.110801,
-			  title: 'conucos',
+			  lat:7.0954413,
+			  lng: -73.1106727,
+			  title: 'diamante',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación Conucos');
+			    alert('Estación el diamante');
 			  }
 			});
 
 	          map.addMarker({
-			  lat: 7.1174544,
-			  lng: -73.1053597,
-			  title: 'unab',
+			  lat:7.1081123,
+			  lng: -73.1162209,
+			  title: 'isla',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación Unab');
+			    alert('Estación la Isla');
 			  }
 			});
 
 			map.drawRoute({
-			  origin: [7.1170495,-73.1297719],
-			  destination: [7.1174544,-73.1053597],
+			  origin: [7.0660561, -73.0980913],
+			  destination: [ 7.122558, -73.1281364],
 			  travelMode: 'driving',
-			  strokeColor: '#A168A5',
+			  strokeColor: '#2AEA37',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			});
 
 			map.drawRoute({
-			  origin:[7.1174544,-73.1053597] ,
-			  destination: [7.1170495,-73.1297719],
+			  origin:[7.122558, -73.1281364] ,
+			  destination: [7.0660561, -73.0980913],
 			  travelMode: 'driving',
-			  strokeColor: '#A168A5',
+			  strokeColor: '#2AEA37',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			}); 

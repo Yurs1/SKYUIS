@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="js/gmaps.js"></script>
 	
 	<script type="text/javascript">
+	     var img='favicon.png';
 		$(document).ready(function() {
 		   
 			 map= new GMaps({
@@ -21,44 +22,65 @@
 			});
 
             
-            
-
-            //ruta 5
+            //ruta 1
 			map.addMarker({
-			  lat: 7.1317356,
-			  lng: -73.1249277,
-			  title: 'sanFrancisco',
+			  lat: 7.1376718,
+			  lng: -73.118959,
+			  title: 'UIS', 
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación San Francisco');
+			    alert('Estación Uis');
 			  }
 			});
 
-	          map.addMarker({
-			  lat: 7.0660561,
-			  lng: -73.0980913,
-			  title: 'lagos',
+			map.addMarker({
+			  lat: 7.0876912,
+			  lng: -73.1364687,
+			  title: 'terminal',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación Lagos');
+			    alert('Estación Terminal de transportes');
+			  }
+			});
+
+              map.addMarker({
+			  lat: 7.1247492,
+			  lng: -73.117962,
+			  title: 'niños',
+			  icon: img,
+			  click: function(e) {
+			    alert('Estación parque de los niños');
+			  }
+			});
+			
+              map.addMarker({
+			  lat: 7.0998583,
+			  lng: -73.1131649,
+			  title: 'laSalle',
+			  icon: img,
+			  click: function(e) {
+			    alert('Estación colegio la Salle');
 			  }
 			});
 
 			map.drawRoute({
-			  origin: [7.1317356,-73.1249277],
-			  destination: [7.0660561,-73.0980913],
+			  origin: [7.1376718,-73.118959],
+			  destination: [7.0888604,-73.133087],
 			  travelMode: 'driving',
-			  strokeColor: '#8D6A6A',
+			  strokeColor: '#131540',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			});
 
+
 			map.drawRoute({
-			  origin:[7.0660561,-73.0980913] ,
-			  destination: [7.1317356,-73.1249277],
+			  origin: [7.0888604,-73.133087],
+			  destination: [7.1376718,-73.118959],
 			  travelMode: 'driving',
-			  strokeColor: '#8D6A6A',
+			  strokeColor: '#131540',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
-			}); 
+			});
 
 });
 	</script>

@@ -12,8 +12,8 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-		   
-			 map= new GMaps({
+		      var img='favicon.png';
+			  map= new GMaps({
 			  div: '#map',
 			  lat: 7.1024639,
 			  lng: -73.1172689,
@@ -21,14 +21,14 @@
 			});
 
 	
-			
-            //ruta 4
+			//ruta 3
 			map.addMarker({
-			  lat: 7.0994319,
-			  lng: -73.1066597,
-			  title: 'cacique',
+			  lat: 7.1170495,
+			  lng: -73.1297719,
+			  title: 'alcaldia',
+			   icon: img,
 			  click: function(e) {
-			    alert('Estación Cacique');
+			    alert('Estación alcaldia');
 			  }
 			});
 
@@ -36,6 +36,7 @@
 			  lat: 7.1190036,
 			  lng: -73.11053498,
 			  title: 'sanpio',
+			   icon: img,
 			  click: function(e) {
 			    alert('Estación parque San Pio');
 			  }
@@ -45,38 +46,39 @@
 			  lat:7.1039052,
 			  lng: -73.110801,
 			  title: 'conucos',
+			   icon: img,
 			  click: function(e) {
 			    alert('Estación Conucos');
 			  }
 			});
 
 	          map.addMarker({
-			  lat: 7.1311197,
-			  lng: -73.1099239,
-			  title: 'parqueAgua',
+			  lat: 7.1174544,
+			  lng: -73.1053597,
+			  title: 'unab',
+			   icon: img,
 			  click: function(e) {
-			    alert('Estación parque del Agua');
+			    alert('Estación Unab');
 			  }
 			});
 
 			map.drawRoute({
-			  origin: [7.0994319,-73.1066597],
-			  destination: [7.1311197,-73.1099239],
+			  origin: [7.1170495,-73.1297719],
+			  destination: [7.1174544,-73.1053597],
 			  travelMode: 'driving',
-			  strokeColor: '#F36363',
+			  strokeColor: '#A168A5',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			});
 
 			map.drawRoute({
-			  origin:[7.1311197,-73.1099239] ,
-			  destination: [7.0994319,-73.1066597],
+			  origin:[7.1174544,-73.1053597] ,
+			  destination: [7.1170495,-73.1297719],
 			  travelMode: 'driving',
-			  strokeColor: '#F36363',
+			  strokeColor: '#A168A5',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			}); 
-
 
 });
 	</script>

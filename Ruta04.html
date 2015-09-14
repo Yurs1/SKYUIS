@@ -12,68 +12,75 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-		   
-			 map= new GMaps({
+		      var img='favicon.png';
+			  map= new GMaps({
 			  div: '#map',
 			  lat: 7.1024639,
 			  lng: -73.1172689,
 			  zoom: 13
 			});
 
-		    //ruta 2
+	
+			
+            //ruta 4
 			map.addMarker({
-			  lat: 7.0660561,
-			  lng: -73.0980913,
-			  title: 'lagos',
+			  lat: 7.0994319,
+			  lng: -73.1066597,
+			  title: 'cacique',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación Lagos');
+			    alert('Estación Cacique');
 			  }
 			});
 
 			map.addMarker({
-			  lat: 7.122558,
-			  lng: -73.1281364,
-			  title: 'quebradaSeca',
+			  lat: 7.1190036,
+			  lng: -73.11053498,
+			  title: 'sanpio',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación quebradaSeca');
+			    alert('Estación parque San Pio');
 			  }
 			});
 
               map.addMarker({
-			  lat:7.0954413,
-			  lng: -73.1106727,
-			  title: 'diamante',
+			  lat:7.1039052,
+			  lng: -73.110801,
+			  title: 'conucos',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación el diamante');
+			    alert('Estación Conucos');
 			  }
 			});
 
 	          map.addMarker({
-			  lat:7.1081123,
-			  lng: -73.1162209,
-			  title: 'isla',
+			  lat: 7.1311197,
+			  lng: -73.1099239,
+			  title: 'parqueAgua',
+			  icon: img,
 			  click: function(e) {
-			    alert('Estación la Isla');
+			    alert('Estación parque del Agua');
 			  }
 			});
 
 			map.drawRoute({
-			  origin: [7.0660561, -73.0980913],
-			  destination: [ 7.122558, -73.1281364],
+			  origin: [7.0994319,-73.1066597],
+			  destination: [7.1311197,-73.1099239],
 			  travelMode: 'driving',
-			  strokeColor: '#2AEA37',
+			  strokeColor: '#F36363',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			});
 
 			map.drawRoute({
-			  origin:[7.122558, -73.1281364] ,
-			  destination: [7.0660561, -73.0980913],
+			  origin:[7.1311197,-73.1099239] ,
+			  destination: [7.0994319,-73.1066597],
 			  travelMode: 'driving',
-			  strokeColor: '#2AEA37',
+			  strokeColor: '#F36363',
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			}); 
+
 
 });
 	</script>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="map" style="width: 685px; height: 450px; border: 1px solid #777; overflow: hidden; margin: 0 auto;"></div>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/gmaps.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		   
+			 map= new GMaps({
+			  div: '#map',
+			  lat: 7.1024639,
+			  lng: -73.1172689,
+			  zoom: 13
+			});
+
+		    //ruta 2
+			map.addMarker({
+			  lat: 7.0660561,
+			  lng: -73.0980913,
+			  title: 'lagos',
+			  click: function(e) {
+			    alert('Estación Lagos');
+			  }
+			});
+
+			map.addMarker({
+			  lat: 7.122558,
+			  lng: -73.1281364,
+			  title: 'quebradaSeca',
+			  click: function(e) {
+			    alert('Estación quebradaSeca');
+			  }
+			});
+
+              map.addMarker({
+			  lat:7.0954413,
+			  lng: -73.1106727,
+			  title: 'diamante',
+			  click: function(e) {
+			    alert('Estación el diamante');
+			  }
+			});
+
+	          map.addMarker({
+			  lat:7.1081123,
+			  lng: -73.1162209,
+			  title: 'isla',
+			  click: function(e) {
+			    alert('Estación la Isla');
+			  }
+			});
+
+			map.drawRoute({
+			  origin: [7.0660561, -73.0980913],
+			  destination: [ 7.122558, -73.1281364],
+			  travelMode: 'driving',
+			  strokeColor: '#2AEA37',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			});
+
+			map.drawRoute({
+			  origin:[7.122558, -73.1281364] ,
+			  destination: [7.0660561, -73.0980913],
+			  travelMode: 'driving',
+			  strokeColor: '#2AEA37',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			}); 
+
+});
+	</script>
+</body>
+</html>

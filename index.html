@@ -2,18 +2,36 @@
 <html>
 <head>
 	<title>Mapa</title>
-    <LINK href="index.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="functions.js" >    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
 </head>
 <body>
 	<header> 
-	<div id="logo"></div>
-	<div id="busqueda"></div>
+	<div id="logo"><img src="Imagenes/logo.jpg"></div>
+	<div id="busqueda">
+		<form method="get" action="http://www.google.com/custom">
+		<table bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0">
+		  <tr>
+		    <td><a href="http://www.google.com/custom/">
+		    <img src="http://www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" align="absmiddle">
+		    </a>
+		    </td><td>
+		    <input type="text" name="q" size="25" maxlength="255" value="">
+		    </td><td>
+		    <input type="submit" name="btnG" value="Buscar en Google">
+		    </td>
+		  </tr>
+		</table>
+		</form>
+	</div>
 	<div id="sesion">
 		<form action="sesiones/session.php" method="post">
 			<div id="radio">
-				<br> <input type="radio" 	name="type" 	value="panel" checked	>	panel
-	  			<br> <input type="radio" 	name="type" 	value="bus"  			>	bus
+				<br> <input type="radio" 	name="type" 	value="panel" checked	/>	panel
+	  			<br> <input type="radio" 	name="type" 	value="bus"  			/>	bus
 			</div>
 
 			<div id="inputse">
@@ -26,6 +44,7 @@
 	</div>		
 	</header>
 
+	<div class="center">
 		<div class="caja">
 			<iframe id="frame" src="mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
 		</div>
@@ -38,11 +57,13 @@
 				  <option> Ruta05
 				  <option> mapa
 				</select> 
-
-
 		</div>
+	</div>
 
-<footer></footer>
+<footer>
+	SKYUIS - TEAM<br>
+	Universidad Industrial de Santander
+</footer>
 
 	
 

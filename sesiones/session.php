@@ -1,3 +1,19 @@
+
+        <form action="sesiones/session.php" method="post">
+            <div id="radio">
+                <br> <input type="radio"    name="type"     value="panel" checked   />  panel
+                <br> <input type="radio"    name="type"     value="bus"             />  bus
+            </div>
+
+            <div id="inputse">
+                <br> <input type="text" name="user"/>
+                <br> <input type="password" name="password"/>
+            </div>
+        
+            <br> <input type="submit" value="Enviar"/>
+        </form>
+S
+
 <?php
 
 

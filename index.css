@@ -37,7 +37,7 @@ header{
 }
 #busqueda{
 	background-color: #ffffff;
-	width: 40%;
+	width: 60%;
 	height:100px;
 	float: left;
 }
@@ -45,10 +45,18 @@ header{
 	padding-top: 20px;
 }
 #sesion{
-	background-color: #ae95b5;
-	width: 40%;
-	height:100px;
+	background-color: #ffffff;
+	width: 20%;
+	height:70px;
 	float: right;
+	padding-top: 30px;
+}
+#sesion a, #sesion a:link, #sesion a:visited,#sesion a:hover{
+	text-decoration: none;
+}
+#sesion span{
+	padding-right: 10px;
+	font-size: 30px;
 }
 
 #radio{

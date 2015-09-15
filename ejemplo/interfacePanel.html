@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Mapa</title>
-    <LINK href="index.css" rel="stylesheet" type="text/css">
     <LINK href="interfaz.css" rel="stylesheet" type="text/css">
+    	 <script type="text/javascript" src="functions.js" >    </script>
 </head>
 <body>
 	<header> 
@@ -27,25 +27,16 @@
 	</div>		
 	</header>
 
-		<iframe src="mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
+		<iframe id="frame" src="../mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
 
 		<div class="caja">
 			<div class="caja">	
 				<input type="checkbox" value="Estaciones" 		checked> Estaciones	<br>
 				<input type="checkbox" value="buses" 			checked> buses		<br>
-				<input type="checkbox" value="rutas"			checked> rutas		<br>
+				<input type="checkbox" value="ruta"			checked> rutas		<br>
 			</div>
 
-			<div class="caja">
-				<select name="Estaciones" size="10" multiple>
-				  <option> Est01
-				  <option> Est02
-				  <option> Est03
-				  <option> Est04
-				  <option> Est05
-				  <option> Est06
-				</select> 
-			</div>
+			
 
 			<div class="caja">
 				<select name="buses" size="10" multiple>
@@ -61,22 +52,18 @@
 			</div>
 
 			<div class="caja">
-				<select name="rutas" size="10" multiple>
+				<select id="ruta" size="6" multiple>
 				  <option> Ruta01
 				  <option> Ruta02
 				  <option> Ruta03
 				  <option> Ruta04
 				  <option> Ruta05
-				  <option> Ruta06
+				  <option> mapa
 				</select> 
 			</div>
 		</div>
 
-		<div class="caja">
-			
-
-			
-		</div>
+		
 
 
 

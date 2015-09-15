@@ -30,13 +30,15 @@
 		<iframe id="frame" src="../mapa.html" style="width: 700px; height: 500px; border: 1px solid #777; overflow: hidden; margin: 0 auto;" ></iframe>
 
 		<div class="caja">
-			<div class="caja">	
-				<input type="checkbox" value="Estaciones" 		checked> Estaciones	<br>
-				<input type="checkbox" value="buses" 			checked> buses		<br>
-				<input type="checkbox" value="ruta"			checked> rutas		<br>
-			</div>
 
-			
+			<div class="caja">
+                      Frecuencia:
+                      <input id="horas" type="number" name="horas" min="0" max="24">
+                      <input id="minutos" type="number" name="minutos" min="0" max="59">
+                      <input id="segundos" type="number" name="segundos" min="0" max="59">
+                      <input id="frecuencia" type="button" name="frecuencia" value="enviar">
+                      
+			</div>
 
 			<div class="caja">
 				<select name="buses" size="10" multiple>
@@ -48,7 +50,10 @@
 				  <option> Bus06
 				</select> 
 				<br>
-			<input type="button" value="Enviar mensaje"/>
+			<input id="acelerar" style="color: #003366; background-color: #74F076" type="button" value="Enviar mensaje acelerar"/>
+			<div>
+			<input id="desacelerar" style="color: #003366; background-color: #F22020" type="button" value="Enviar mensaje desacelerar"/>
+			</div>
 			</div>
 
 			<div class="caja">

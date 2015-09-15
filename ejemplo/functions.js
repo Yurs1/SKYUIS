@@ -6,6 +6,9 @@ var marker;
 window.onload = function(){
 
 
+	document.getElementById("frecuencia").onclick=actualizar;
+    document.getElementById("acelerar").onclick=acelerar;
+    document.getElementById("desacelerar").onclick=desacelerar;
     x = document.getElementById("ruta");
 	x.onchange =  showruta;
 	
@@ -25,3 +28,20 @@ function showruta()
 	frame.setAttribute("src", "../"+x.value+"Autorefresh.html");
 }
 
+function actualizar()
+{
+	h=document.getElementById("horas").value;
+	m=document.getElementById("minutos").value;
+	s=document.getElementById("segundos").value;
+	alert(h+m+s);
+}
+
+function acelerar()
+{
+  alert("Se ha enviado el mensaje de acelerar al conductor");
+}
+
+function desacelerar()
+{
+  alert("Se ha enviado el mensaje de desacelerar al conductor");
+}

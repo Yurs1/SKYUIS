@@ -1,30 +1,7 @@
-
-        <form action="sesiones/session.php" method="post">
-            <div id="radio">
-                <br> <input type="radio"    name="type"     value="panel" checked   />  panel
-                <br> <input type="radio"    name="type"     value="bus"             />  bus
-            </div>
-
-            <div id="inputse">
-                <br> <input type="text" name="user"/>
-                <br> <input type="password" name="password"/>
-            </div>
-        
-            <br> <input type="submit" value="Enviar"/>
-        </form>
-S
-
-<?php
-
-
-$user = $_POST['user'];
-$password = $_POST['password'];
-echo $user, $password
-
-?>
+<!-- 
 <?php
 session_start();
-if(!(isset($_SESSION["password"]))){
+if(!(isset($_SESSION["pass"]))){
     session_destroy();
 }
 else {
@@ -36,17 +13,21 @@ else {
     }   
 }
 ?>
+
+-->
+
 <html>
     <head>
         <title>Iniciar sesión | Monitoreo de Rutas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" media="screen" href="public/css/styleLogin.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styleLogin.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
     </head>
     <body>
             <div class="box">
                 <div class="logo">
-                    <a href="index.php"><img src="public/img/logo.png" /></a>
+                    <a href="../index.html"><img src="../Imagenes/logo.jpg" /></a>
                 </div>
                 <form method="post" action="bd/bd_login.php">
                     <h1>Ingrese a su Cuenta</h1>
@@ -60,12 +41,9 @@ else {
                     </div>
                     
                     <div class="ingresar">
-                    <input type="submit" value="Ingresar" />
-                    <select name="combo" size="1" >
-                        <option value="cliente">Usuario Hotel</option>
-                        <option value="admin">Administrador</option>
-                    </select>
-                    
+                    <input type="submit" value="Ingresar" />                    
+                    <input type="radio" name="combo" value="panel" checked>Panel
+                    <input type="radio" name="combo" value="bus">Bus
                     <br>
                     <br>
                     <a href="#">Registrate!</a>
@@ -74,10 +52,13 @@ else {
                     
                 </form>
                 <div class="volver">
-                <a href="index.php"><img src="public/img/volver.png" /></a>
+                <a href="../index.html"><img src="../Imagenes/volver.png" /></a>
                 </div>
             </div>
-        <div class="footer"></div> 
+<footer>
+    SKYUIS - TEAM<br>
+    Universidad Industrial de Santander
+</footer>
         
     </body>
 </html>

@@ -1,0 +1,151 @@
+*{margin: 0px; padding: 0px}
+body{
+    background: url(../img/hotel.jpg) center;   
+}
+a{
+    margin: 0px 10px 0px 10px;
+}
+a:link {
+    color: #000000;
+}
+
+/* visited link */
+a:visited {
+    color: #8d989c;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF8D00;
+}
+
+/* selected link */
+a:active {
+    color: #8d989c;
+}
+
+select {
+   background: whitesmoke;
+   width: auto;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+.box{
+    width: 40%;
+    height: auto;
+    float: left;
+    background: white;
+    position:relative;
+    display: inline-block;
+    margin: 100px 30% 50px 30%;   
+    border-radius: 35px 35px 35px 35px;  
+    text-align: center;
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+}
+.logo img{
+    width: auto;
+    height: 100%;
+    vertical-align: middle;
+}
+label {
+  width: 25%;
+  float: left;
+  
+}
+
+:focus {outline:none}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+form{
+  margin: 0 30px;
+}
+
+input[type=submit]{
+    padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    
+}
+
+input[type=text],input[type=password]{
+  width: 200px; 
+  height: 39px; 
+  -webkit-border-radius: 4px 4px 4px 4px/5px 5px 4px 4px; 
+  -moz-border-radius: 4px 4px 4px 4px/0px 0px 4px 4px; 
+  border-radius: 4px 4px 4px 4px/5px 5px 4px 4px; 
+  background-color: #fff; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 13px; 
+  padding-left: 10px;
+}
+
+input[type=password]{
+  margin-bottom: 25px;
+}
+h1{
+    margin: 4px;
+}
+
+.ingresar{
+
+}
+.volver{
+ float: right;
+}
+footer{
+  position: relative; 
+  margin-top: -40px; /* altura en px del footer con valor negativo */ 
+  height: 40px; /* Altura del Footer en px*/ 
+  clear: both; 
+  background: #286af0; 
+  text-align: center; 
+  color: #FFFFFF;
+  padding: 10px 30% 10px 30%;
+}
+
+
+@media screen and (max-width: 925px) {
+    
+   .box{
+    width: 90%;
+    height: auto;
+    float: left;
+    background: white;
+    position:relative;
+    display: inline-block;
+    margin: 20px 5% 0 5%;   
+    border-radius: 35px 35px 35px 35px;  
+    text-align: center;
+} 
+.box a{
+    font-size: 12px;
+}
+}

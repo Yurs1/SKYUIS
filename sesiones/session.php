@@ -42,8 +42,8 @@ else {
                     
                     <div class="ingresar">
                     <input type="submit" value="Ingresar" />                    
-                    <input type="radio" name="combo" value="panel" checked>Panel
-                    <input type="radio" name="combo" value="bus">Bus
+                    <input type="radio" name="combo" value="conductor" checked>Conductor
+                    <input type="radio" name="combo" value="monitor">Monitor
                     <br>
                     <br>
                     <a href="#">Registrate!</a>

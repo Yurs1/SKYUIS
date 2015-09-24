@@ -1,4 +1,3 @@
-<!-- 
 <?php
 session_start();
 if(!(isset($_SESSION["pass"]))){
@@ -6,15 +5,13 @@ if(!(isset($_SESSION["pass"]))){
 }
 else {
     if(isset($_SESSION["user"])){
-        header("Location: ./public/client.php");
+        header("Location: ./Conductor/conductor.php");
     }
     if(isset($_SESSION["admin"])){
-        header("Location: ./admin/index.php");
+        header("Location: ./Monitor/monitor.php");
     }   
 }
 ?>
-
--->
 
 <html>
     <head>
@@ -29,7 +26,7 @@ else {
                 <div class="logo">
                     <a href="../index.html"><img src="../Imagenes/logo.jpg" /></a>
                 </div>
-                <form method="post" action="bd/bd_login.php">
+                <form method="post" action="bd_login.php">
                     <h1>Ingrese a su Cuenta</h1>
                     
                     <div class="login">

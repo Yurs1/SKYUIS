@@ -21,7 +21,7 @@ if ($tipo=="conductor"){
     if ($nr==0) 
     {
         
-        echo "<script>var pagina='../session.php'; function redireccionar(){ parent.location.href=pagina; } setTimeout('redireccionar()',1);alert('Intente nuevamente');</script>";
+        echo "<script>var pagina='session.php'; function redireccionar(){ parent.location.href=pagina; } setTimeout('redireccionar()',1);alert('Intente nuevamente');</script>";
         session_destroy();
     }
     else 
@@ -44,7 +44,7 @@ else{
         if ($nr==0) 
         {
             
-            echo "<script>var pagina='../session.php'; function redireccionar(){ parent.location.href=pagina; } setTimeout('redireccionar()',1);alert('Intente nuevamente');</script>";
+            echo "<script>var pagina='session.php'; function redireccionar(){ parent.location.href=pagina; } setTimeout('redireccionar()',1);alert('Intente nuevamente');</script>";
             session_destroy();
         }
         else 

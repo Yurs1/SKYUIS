@@ -1,0 +1,139 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/08/2015, 11:36:01 PM
+    Author     :
+*/
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    
+}
+body{
+    background: whitesmoke;
+}
+/* BANNER */
+header{
+    font-size: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+}
+
+#logo{
+    background-color: #ffffff;
+    width: 20%;
+    height:100px;
+    float: left;    
+}
+#logo img{
+    height: 100px;
+    text-align: center; 
+}
+#busqueda{
+    background-color: #ffffff;
+    width: 60%;
+    height:100px;
+    float: left;
+}
+#busqueda form{
+    padding-top: 20px;
+}
+#sesion{
+    background-color: #ffffff;
+    width: 20%;
+    height:100px;
+    float: right;
+    padding-top: 30px;
+}
+#sesion a, #sesion a:link, #sesion a:visited,#sesion a:hover{
+    text-decoration: none;
+}
+#sesion span{
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+/* SCREEN */
+.screen{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    min-height:50px;
+    overflow:hidden;
+    padding: 10px;
+    padding-top: 150px;
+    width: 100%;
+}
+.room:link,.room:hover, .room:visited{
+    margin: 5px;
+    padding: 30px;
+    width: 23%;
+    height: auto;
+    background: #68b12f;    
+    float: left;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.content{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+}
+.info{
+    float: right;
+    background: white;
+    width: 70%;
+    height: 200px;
+}
+.info h1{
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.info p{
+    margin: 10px;
+}
+.buttons{
+    float: left;
+    background: #BEBEBE;
+    width: 30%;
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.buttons a{
+    text-decoration: none;
+}
+.buttons a:link{
+    color: #4c4c4c;
+}
+.buttons a:hover{
+    color: #4c4c4c;
+}
+.buttons a:visited{
+    color: #4c4c4c;
+}
+.button{
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    float: left;
+    border-radius: 15px;
+    text-align: center;  
+    
+}
+
+

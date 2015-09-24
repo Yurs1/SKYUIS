@@ -53,6 +53,7 @@ header{
 }
 #sesion a, #sesion a:link, #sesion a:visited,#sesion a:hover{
 	text-decoration: none;
+	color: #000000;
 }
 #sesion span{
 	padding-right: 10px;
@@ -85,14 +86,16 @@ header{
 	padding-bottom: 50px;
 }
 footer{
-	position: relative; 
-	margin-top: -40px; /* altura en px del footer con valor negativo */ 
-	height: 40px; /* Altura del Footer en px*/ 
-	clear: both; 
-	background: #286af0; 
-	text-align: center; 
-	color: #FFFFFF;
-	padding: 10px 30% 10px 30%;
+  position: fixed; 
+  margin-top: -40px; /* altura en px del footer con valor negativo */ 
+  height: 40px; /* Altura del Footer en px*/ 
+  clear: both; 
+  background: #286af0; 
+  text-align: center; 
+  color: #FFFFFF;
+  padding: 10px 0px 10px 0px;
+  bottom: 0px;
+  width: 100%;
 }
 
 @media screen and (max-width: 785px) {

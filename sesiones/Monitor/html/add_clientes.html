@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<form method="post" action="bd/query_add_cliente.php">
+    <div class="titulo">
+    <h1>Añadir Cliente</h1>
+    </div>
+    
+    <div class="form">
+    <label>Documento de Identidad</label>
+    <input name="doc_id" type="text" placeholder="Identificación"/>   
+    </div>
+    
+    <div class="form">
+    <label>Primer Nombre</label> 
+    <input name="nombre1" type="text" placeholder="Primer Nombre" />
+    </div>
+    
+    <div class="form">
+    <label>Segundo Nombre</label> 
+    <input name="nombre2" type="text" placeholder="Segundo Nombre" />
+    </div>
+    
+    <div class="form">
+    <label>Primer Apellido</label> 
+    <input name="apellido1" type="text" placeholder="Primer Apellido" />
+    </div>
+    
+    <div class="form">
+    <label>Segundo Apellido</label> 
+    <input name="apellido2" type="text" placeholder="Segundo Apellido" />
+    </div>
+    
+    <div class="form">
+    <label>Fecha de Nacimiento</label> 
+    <input name="fechadenac" type="date" />
+    </div>
+    
+    <div class="form">
+    <label>Genero</label> 
+    <select name="genero" size="1" >
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Otro">Otro</option>
+    </select>
+    </div>
+    
+    <div class="form">
+    <label>Correo Electronico</label> 
+    <input name="email" type="email" placeholder="e-mail"/>
+    </div>
+    
+    <div class="form">
+    <label>Telefono</label> 
+    <input name="telefono" type="number" placeholder="Telefono"/>
+    </div>
+
+    <div class="form">
+    <input type="submit" value="ENVIAR" />    
+    </div>    
+</form>

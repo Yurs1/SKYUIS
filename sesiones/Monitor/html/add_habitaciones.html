@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<form method="post" action="bd/query_add_habitacion.php">
+    <div class="titulo">
+    <h1>Añadir Habitaciones</h1>
+    </div>
+    
+    <div class="form">
+    <label>N° de Habitacion</label>
+    <input name="codigo" type="text" placeholder="#Habitacion"/>   
+    </div>
+    
+    <div class="form">
+    <label>Precio por Persona (c/u) *Escribir numero entero</label> 
+    <input name="precioxpersona" type="text" placeholder="$ c/u" />
+    </div>
+    
+    <div class="form">
+    <label>MINIMA cantidad de personas por habitacion</label>
+    <input name="minimo" type="text" placeholder="Minimo" />
+    </div>
+    
+    <div class="form">
+    <label>MAXIMA cantidad de personas por habitacion</label>
+    <input name="maximo" type="text" placeholder="Maximo" />
+    </div>
+    
+    <div class="form">
+    <input type="submit" value="ENVIAR" />    
+    </div>    
+</form>

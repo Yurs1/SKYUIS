@@ -106,6 +106,9 @@ header{
     font-size: 20px;
     text-align: center;
 }
+.info h2{
+    text-align: center;
+}
 .info p{
     margin: 10px;
 }
@@ -121,24 +124,49 @@ header{
     text-decoration: none;
 }
 .buttons a:link{
-    color: #4c4c4c;
+    color: white;
 }
 .buttons a:hover{
-    color: #4c4c4c;
+    color: white;
 }
 .buttons a:visited{
-    color: #4c4c4c;
+    color: white;
 }
-.button{
+.button1{
     margin-top: 10px;
-    padding: 15px;
-    width: 50px;
+    margin-right: 15px;
+    padding: 30px;
+    width: auto;
     height: auto;
-    background: whitesmoke;
+    background: blue;
     float: left;
     border-radius: 15px;
     text-align: center;  
-    
+}
+.button1 span{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.button2{
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background: green;
+    float: right;
+    border-radius: 15px;
+    text-align: center; 
 }
 
-
+.button3{
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background: red;
+    float: right;
+    border-radius: 15px;
+    text-align: center;
+}

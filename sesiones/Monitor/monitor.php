@@ -58,24 +58,14 @@ include('../../bd/conexion.php');
         
         <div class="content" id="content">
             <div class="buttons">                
-                <a class="button" href="vincularservicios.php">VINCULAR SERVICIOS</a>
-                <a class="button" href="../reservas/reserva.php">AVANZAR!</a>  
-                <a class="button" href="../reservas/rem_reserva.php">DISMINUIR</a>                                                                  
+                <a class="button1" href="CrearRecorrido.php"><span class="icon-plus"></span>AÑADIR RECORRIDOS</a>
+                <a class="button1" href="EliminarRecorridos.php"><span class="icon-cancel-circle"></span>ELIMINAR RECORRIDOS</a>
+                <a class="button2" href="#">AVANZAR!</a>  
+                <a class="button3" href="#">DISMINUIR</a>                                                                  
             </div>
             <div class="info">
-            <?php
-            if(isset($_GET["hab"])){
-                $sql2="select * from habitaciones where codigo='".$_GET["hab"]."'";
-                $result2 = mysqli_query($conexion, $sql2);
-                $row =  mysqli_fetch_array($result2);
-                
-                echo "<h1>Habitación ".$row["codigo"]."</h1>";
-                echo "<p>Precio por Persona = ".$row["precioxpersona"]."<br>Minima C/P = ".$row["minimo"]."<br>Maxima C/P = ".$row["maximo"]."<br></p>";
-            }
-            else{
-                echo "<h1>MODULO DE ADMINISTRACION</h1><br><h2>";
-            }
-            
+            <?php            
+                echo "<h1>MODULO DE ADMINISTRACION</h1><br><h2>Bienvenido ".$nombre."</h2>";                        
             ?>
             </div>
           

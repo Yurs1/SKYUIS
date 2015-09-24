@@ -9,7 +9,7 @@ $conn=NULL;
 
 function conectarse() 
 { 
-   if (!($conn=mysqli_connect("localhost", "skyuis", "5yrQ74X6yRw8FQbW", "transmetro"))) 
+   if (!($conn=mysqli_connect("localhost", "skyuis", "5yrQ74X6yRw8FQbW", "mydb"))) 
    { 
       echo "ERROR CONECTANDO A LA BASE DE DATOS."; 
       exit(); 

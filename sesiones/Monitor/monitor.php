@@ -58,9 +58,9 @@ include('../../bd/conexion.php');
         
         <div class="content" id="content">
             <div class="buttons">                
-                <a class="button" href="../reservas/reserva.php">AÑADIR BUSES</a>  
-                <a class="button" href="../reservas/rem_reserva.php">ELIMINAR RESERVAS</a>                                  
-                <a class="button" href="vincularservicios.php">VINCULAR SERVICIOS</a>                
+                <a class="button" href="vincularservicios.php">VINCULAR SERVICIOS</a>
+                <a class="button" href="../reservas/reserva.php">AVANZAR!</a>  
+                <a class="button" href="../reservas/rem_reserva.php">DISMINUIR</a>                                                                  
             </div>
             <div class="info">
             <?php

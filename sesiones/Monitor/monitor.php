@@ -35,23 +35,17 @@ include('../../bd/conexion.php');
         <div id="logo">
             <img src="img/logo.jpg">
         </div>
-        <div id="busqueda">
-            <form method="get" action="http://www.google.com/custom">
-            <table bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0">
-              <tr>
-                <td><a href="http://www.google.com/custom/">
-                <img src="http://www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" align="absmiddle">
-                </a>
-                </td><td>
-                <input type="text" name="q" size="25" maxlength="255" value="">
-                </td><td>
-                <input type="submit" name="btnG" value="Buscar en Google">
-                </td>
-              </tr>
-            </table>
+        <div id="timestamp" onload="mueveReloj()">
+            <script src="js/timestamp.js"></script>            
+            <div class="recuadro3">  
+            <form name="reloj12">
+                <script type="text/javascript">
+                    MostrarFecha();
+                </script>  
+                <input type="text" size="14" name="digitos" disabled>  
             </form>
+            </div>
         </div>
-
             <div id="sesion">
                 <?php echo $nombre."        |   "; ?>
                 <a href='../logout.php'>Cerrar sesion<span class="icon-exit"></span></a>
@@ -64,7 +58,7 @@ include('../../bd/conexion.php');
         
         <div class="content" id="content">
             <div class="buttons">                
-                <a class="button" href="../reservas/reserva.php">RESERVAR HABITACION</a>  
+                <a class="button" href="../reservas/reserva.php">AÑADIR BUSES</a>  
                 <a class="button" href="../reservas/rem_reserva.php">ELIMINAR RESERVAS</a>                                  
                 <a class="button" href="vincularservicios.php">VINCULAR SERVICIOS</a>                
             </div>

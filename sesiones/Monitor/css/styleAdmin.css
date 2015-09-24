@@ -20,7 +20,7 @@ body{
 /* BANNER */
 header{
     font-size: 20px;
-    height: 100px;
+    height: 50px;
     width: 100%;
     background-color: #ffffff;
     position: fixed;
@@ -30,35 +30,39 @@ header{
 #logo{
     background-color: #ffffff;
     width: 20%;
-    height:100px;
+    height:50px;
     float: left;    
 }
 #logo img{
-    height: 100px;
+    height: 50px;
     text-align: center; 
 }
-#busqueda{
+#timestamp{
     background-color: #ffffff;
     width: 60%;
-    height:100px;
+    height:50px;
     float: left;
+    padding-top: 13px;
+    text-align: center;
 }
-#busqueda form{
-    padding-top: 20px;
+.recuadro3 input[type=text]{
+    border: 0px;
+    background: #ffffff;
+    text-decoration: none;
 }
 #sesion{
     background-color: #ffffff;
     width: 20%;
-    height:100px;
+    height:50px;
     float: right;
-    padding-top: 30px;
+    padding-top: 13px;
 }
 #sesion a, #sesion a:link, #sesion a:visited,#sesion a:hover{
     text-decoration: none;
 }
 #sesion span{
     padding-left: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* SCREEN */
@@ -68,7 +72,7 @@ header{
     min-height:50px;
     overflow:hidden;
     padding: 10px;
-    padding-top: 150px;
+    padding-top: 100px;
     width: 100%;
 }
 .room:link,.room:hover, .room:visited{
@@ -88,13 +92,13 @@ header{
     position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 200px;
+    height: 100px;
 }
 .info{
     float: right;
     background: white;
-    width: 70%;
-    height: 200px;
+    width: 30%;
+    height: 100px;
 }
 .info h1{
     margin: 10px;
@@ -107,8 +111,8 @@ header{
 .buttons{
     float: left;
     background: #BEBEBE;
-    width: 30%;
-    height: 200px;
+    width: 70%;
+    height: 100px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -127,7 +131,7 @@ header{
 .button{
     margin-top: 10px;
     padding: 15px;
-    width: 100%;
+    width: 50px;
     height: auto;
     background: whitesmoke;
     float: left;

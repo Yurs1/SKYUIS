@@ -168,3 +168,16 @@ td{
     margin: 0px;
     border: solid 1px #68b12f;
 }
+
+footer{
+  position: fixed; 
+  margin-top: -40px; /* altura en px del footer con valor negativo */ 
+  height: 40px; /* Altura del Footer en px*/ 
+  clear: both; 
+  background: #286af0; 
+  text-align: center; 
+  color: #FFFFFF;
+  padding: 10px 0px 10px 0px;
+  bottom: 0px;
+  width: 100%;
+}

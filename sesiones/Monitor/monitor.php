@@ -53,7 +53,9 @@ include('../../bd/conexion.php');
         </header>
         
         <div class="screen">
-        MAPA
+            <div class="caja">
+                <iframe id="frame" src="mapa.html" style="width: 100%; height:493px;border: 0px solid #777; overflow: hidden; margin: 0 auto; padding:0px;" ></iframe>
+            </div>
         </div>        
         
         <div class="content" id="content">

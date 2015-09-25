@@ -5,6 +5,7 @@ error_reporting(-1);
 include('../../bd/conexion.php');
 $conexion = conectarse();
 
+
 ?>
 <html>
     <head>

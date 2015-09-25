@@ -72,8 +72,8 @@ header{
     width: 100%;
     min-height:50px;
     overflow:hidden;
-    padding: 10px;
-    padding-top: 100px;
+    padding: 0px;
+    padding-top: 50px;
     width: 100%;
 }
 .room:link,.room:hover, .room:visited{

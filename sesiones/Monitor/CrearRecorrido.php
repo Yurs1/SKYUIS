@@ -62,7 +62,7 @@ $conexion = conectarse();
                             $idBus = $row["idBus"];
                             $Placa = $row["Placa"];
                             $Capacidad = $row["Capacidad"];                        
-                            $listado = $listado."<option value=".$idBus.">".$idBus." - ".$Placa." ".$Capacidad."</option>";
+                            $listado = $listado."<option value=".$idBus.">".$idBus." - ".$Placa." - ".$Capacidad."</option>";
                         }
                         echo $listado;
                         ?>

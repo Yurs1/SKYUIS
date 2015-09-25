@@ -18,7 +18,7 @@ p {
 
 header{
 	font-size: 20px;
-	height: 100px;
+	height: 80px;
 	width: 100%;
     background-color: #000000;
     position: fixed;
@@ -28,28 +28,28 @@ header{
 #logo{
 	background-color: #ffffff;
 	width: 20%;
-	height:100px;
+	height:80px;
 	float: left;	
 }
 #logo img{
-	height: 100px;
+	height: 80px;
 	text-align: center;	
 }
 #busqueda{
 	background-color: #ffffff;
 	width: 60%;
-	height:100px;
+	height:80px;
 	float: left;
 }
 #busqueda form{
-	padding-top: 20px;
+	padding-top: 15px;
 }
 #sesion{
 	background-color: #ffffff;
 	width: 20%;
-	height:70px;
+	height:60px;
 	float: right;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 #sesion a, #sesion a:link, #sesion a:visited,#sesion a:hover{
 	text-decoration: none;
@@ -81,9 +81,10 @@ header{
 	margin-left: 50px;
 }
 .center{
-	padding-top: 150px;
+	padding-top: 100px;
 	width: 100%;
 	padding-bottom: 50px;
+	height: 600px;
 }
 footer{
   position: fixed; 

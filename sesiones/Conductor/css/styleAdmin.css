@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/08/2015, 11:36:01 PM
+    Author     :
+*/
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;    
+}
+body{
+    background: whitesmoke;
+}
+/* BANNER */
+header{
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+}
+
+#logo{
+    background-color: #ffffff;
+    width: 40%;
+    height:50px;
+    float: left;    
+}
+#logo img{
+    height: 50px;
+    text-align: center; 
+}
+
+.recuadro3 input[type=text]{
+    border: 0px;
+    background: #ffffff;
+    text-decoration: none;
+}
+#sesion{
+    background-color: #ffffff;
+    width: 60%;
+    height:50px;
+    float: left;
+    padding-top: 13px;
+    text-align: right;
+}
+#sesion a, #sesion a:link, #sesion a:visited,#sesion a:hover{
+    text-decoration: none;    
+}
+#sesion span{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+/* SCREEN */
+.screen{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    min-height:50px;
+    overflow:hidden;
+    padding: 0px;
+    padding-top: 50px;
+    width: 100%;
+
+}
+.room:link,.room:hover, .room:visited{
+    margin: 5px;
+    padding: 30px;
+    width: 23%;
+    height: auto;
+    background: #68b12f;    
+    float: left;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.content{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 320px;
+
+}
+.buttons{
+    float: left;
+    background: #BEBEBE;
+    width: 100%;
+    height: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.buttons a{
+    text-decoration: none;
+}
+.buttons a:link{
+    color: white;
+}
+.buttons a:hover{
+    color: white;
+}
+.buttons a:visited{
+    color: white;
+}
+.button1{
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    background: blue;
+    float: left;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;  
+}
+.button2{
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    background: green;
+    float: left;
+    border-radius: 15px;
+    text-align: center; 
+    font-size: 25px;
+}
+
+.button3{
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    background: red;
+    float: left;
+    border-radius: 15px;
+    text-align: center; 
+    font-size: 25px;
+}
